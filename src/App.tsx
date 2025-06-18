@@ -1,4 +1,4 @@
-import { BrowserRouter as Router, Route, Routes } from react-router-dom';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import { AuthProvider } from './context/AuthContext';
 import { ThemeProvider } from './context/ThemeConext';
 import Layout from './components/Layout';
@@ -18,12 +18,12 @@ function App() {
           <Layout>
             <Routes>
               <Route path="/" element={<HomePage />} />
-              {/* <Route path="/playlist/:playlistId" element={<PlaylistPage />} /> */}
-              {/* <Route path="/search" element={<SearchResultsPage />} />
+              <Route path="/playlist/:playlistId" element={<PlaylistPage />} />
+              <Route path="/search" element={<SearchResultsPage />} />
               <Route path="/profile" element={<ProfilePage />} />
               <Route path="/terms" element={<TermsPage />} />
               <Route path="/privacy" element={<PrivacyPage />} />
-              <Route path="/*" element={<NotFoundPage />} /> */}
+              <Route path="/*" element={<NotFoundPage />} />
             </Routes>
           </Layout>
         </Router>
